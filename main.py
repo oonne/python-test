@@ -1,3 +1,3 @@
-from test.env import get_env
+from test.langchai import test
 
-get_env()
+test()
