@@ -1,7 +1,6 @@
 from langchain_community.chat_models import ChatZhipuAI
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnableSequence
 
 # 使用智谱
 llm = ChatZhipuAI(
@@ -22,7 +21,6 @@ chain = prompt | llm | StrOutputParser()
 input_text = "Hello, how are you?"
 
 # 生成响应
-
 def test():
     response = chain.invoke({"text": input_text})
     print(response)

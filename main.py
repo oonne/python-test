@@ -1,3 +1,3 @@
-from test.langchai import test
+from test.lancedb import test
 
 test()
